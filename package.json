@@ -1,0 +1,22 @@
+{
+  "name": "player-notifications",
+  "main": "./lib/player-notifications",
+  "version": "0.0.1",
+  "description": "Show notification for some player events",
+  "repository": "https://github.com/Cantik-Music-Player/player-notifications",
+  "license": "MIT",
+  "engines": {
+    "cantik": "*"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register spec",
+    "coverage": "istanbul cover _mocha -- --recursive --compilers coffee:coffee-script/register --require coffee-coverage/register-istanbul spec"
+  },
+  "devDependencies": {
+    "coffee-coverage": "^1.0.1",
+    "istanbul": "^0.4.3",
+    "mocha": "^3.0.2",
+    "sinon": "^1.17.3",
+    "coveralls": "^2.11.9"
+  }
+}
